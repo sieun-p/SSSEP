@@ -1,7 +1,6 @@
 import torch
 import torch.nn as nn
 import torch.nn.functional as F
-import torchvision
 
 class EEGNet(nn.Module):
     
@@ -70,11 +69,5 @@ class EEGNet(nn.Module):
         
         return x
     
-model = EEGNet()
-myModel = model(torch.randn(10,1,64,128))
-
-
-
-
-
-
+#model = EEGNet()
+#myModel = model(torch.randn(10,1,64,128))
